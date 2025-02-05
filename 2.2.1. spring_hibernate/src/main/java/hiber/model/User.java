@@ -3,6 +3,7 @@ package hiber.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
+@NamedEntityGraph(name = "user-with-car", attributeNodes = @NamedAttributeNode("car"))
 @Entity
 @Table(name = "users")
 public class User {
